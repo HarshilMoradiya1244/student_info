@@ -30,37 +30,34 @@ class _HomeScreenState extends State<HomeScreen> {
                   .map(
                     (e) => Padding(
                   padding: const EdgeInsets.all(10),
-                  child: SingleChildScrollView(scrollDirection: Axis.horizontal,
-                    child: Container(
-                      height: MediaQuery.of(context).size.height * 0.10,
-                      width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(
-                        color: Colors.grey.shade400,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(10),
-                        child: Row(
-                          children: [
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("grid : ${e['grid']}"),
-                                Spacer( ),
-                                Text("name : ${e['name']}"),
-                                Spacer( ),
-                                Text("std : ${e['std']}"),
-                              ],
-                            ),
-                            Spacer( ),
-                            IconButton(onPressed: (){
-                              setState(() {
-                                Global.g1.studentList.remove(e);
-                              });
-
-                            }, icon: Icon(Icons.delete,color: Colors.black,))
-                          ],
-                        ),
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.10,
+                    width: MediaQuery.of(context).size.width,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade400,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("grid : ${e['grid']}"),
+                              Spacer( ),
+                              Text("name : ${e['name']}"),
+                              Spacer( ),
+                              Text("std : ${e['Std']}"),
+                            ],
+                          ),
+                          Spacer( ),
+                          IconButton(onPressed: (){
+                            setState(() {
+                              Global.g1.studentList.remove(e);
+                            });
+                          }, icon: Icon(Icons.delete,color: Colors.black,))
+                        ],
                       ),
                     ),
                   ),

@@ -48,11 +48,20 @@ class _DataScreenState extends State<DataScreen> {
                             hintText: 'grid',
                             hintStyle: TextStyle(color: Colors.black)),
                       ),
+                      SizedBox(height: 10,),
                       TextField(
                         controller: txtname,
                         decoration: const InputDecoration(
                             border:OutlineInputBorder(borderSide:BorderSide(color: Colors.black)),
                             hintText: 'Name',
+                            hintStyle: TextStyle(color: Colors.black)),
+                      ),
+                      SizedBox(height: 10,),
+                      TextField(
+                        controller: txtstd,
+                        decoration: const InputDecoration(
+                            border:OutlineInputBorder(borderSide:BorderSide(color: Colors.black)),
+                            hintText: 'std',
                             hintStyle: TextStyle(color: Colors.black)),
                       ),
                     ],
