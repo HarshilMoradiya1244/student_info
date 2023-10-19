@@ -1,6 +1,7 @@
-class Global {
 
-  static Global g1 =Global();
+import '../modal/student_modal.dart';
 
-  List studentList=[];
+class Global{
+  static Global g1 = Global();
+  List<StudentModel> stdlist=[];
 }
