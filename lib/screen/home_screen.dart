@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 controller: txtstd,
                 decoration: const InputDecoration(
                     border: OutlineInputBorder(), hintText: "Std"),
-              ),,
+              ),
             ),
             ElevatedButton(
               onPressed: () {
